@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "name": "Pipe Wrench",
+      "type": "Plumbing"
+    },
+    {
+      "id": 2,
+      "name": "Electric Drill",
+      "type": "Electric"
+    },
+    {
+      "id": 3,
+      "name": "Garden Hose",
+      "type": "Gardening"
+    },
+    {
+      "id": 4,
+      "name": "Toilet Plunger",
+      "type": "Plumbing"
+    },
+    {
+      "id": 5,
+      "name": "Electric Screwdriver",
+      "type": "Electric"
+    },
+    {
+      "id": 6,
+      "name": "Garden Shovel",
+      "type": "Gardening"
+    },
+    {
+      "id": 7,
+      "name": "Faucet",
+      "type": "Plumbing"
+    },
+    {
+      "id": 8,
+      "name": "Electric Saw",
+      "type": "Electric"
+    },
+    {
+      "id": 9,
+      "name": "Garden Gloves",
+      "type": "Gardening"
+    },
+    {
+      "id": 10,
+      "name": "Pipe Cutter",
+      "type": "Plumbing"
+    }
+  ]
