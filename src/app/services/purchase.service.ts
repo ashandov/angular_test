@@ -2,9 +2,10 @@ import { Observable } from 'rxjs/internal/Observable';
 import { Injectable } from '@angular/core';
 import { delay, map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
-import { PurchaseReponse } from '../models/purchaseResponse.model';
+
 import { baseUrl } from 'src/assets/config';
 import { Purchase } from '../models/purchase.model';
+import { PurchaseReponse } from '../models/purchase-response.model';
 
 @Injectable({
   providedIn: 'root',

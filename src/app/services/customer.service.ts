@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 
 import { baseUrl } from 'src/assets/config';
 import { Customer } from '../models/customer.model';
-import { CustomerResponse } from '../models/customerResponse.model ';
+import { CustomerResponse } from '../models/customer-response.model ';
 
 @Injectable({
   providedIn: 'root',
@@ -26,6 +26,7 @@ export class CustomerService {
               firstName: item.firstname,
               lastName: item.lastname,
               birthYear: item.yearofbirth,
+              fullName: `${item.firstname} ${item.lastname}`,
             } as Customer)
         )
       )

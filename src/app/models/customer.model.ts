@@ -3,4 +3,5 @@ export interface Customer {
   firstName: string;
   lastName: string;
   birthYear: number;
+  fullName: string;
 }

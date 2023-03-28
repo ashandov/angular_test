@@ -1,0 +1,18 @@
+<div class="customers">
+  <h1>{{ title }}</h1>
+
+  <div class="select-wrapper">
+    <label for="customer">Select a customer:</label>
+    <select id="customer" (change)="onCustomerSelected($event)">
+      <option
+        *ngFor="let customer of customers; trackBy: customerTrackBy"
+        [value]="customer.id"
+      >
+        {{ customer.fullName }}
+      </option>
+    </select>
+  </div>
+</div>
+
+<app-purchase-products *ngIf="selectedCustomer" [customer]="selectedCustomer">
+</app-purchase-products>
