@@ -6,7 +6,7 @@
     <div class="goods">
       <h2>{{ customer | customerInfo }} Purchased products:</h2>
       <ul>
-        <li *ngFor="let product of purchasedProducts; trackBy: productsTrackBy">
+        <li *ngFor="let product of purchasedProducts">
           <app-purchase-product [product]="product"></app-purchase-product>
         </li>
       </ul>

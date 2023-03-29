@@ -31,16 +31,4 @@ export class CustomersComponent implements OnInit, OnDestroy {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   }
-
-  onCustomerSelected(event: Event): void {
-    const selectElement = event.target as HTMLSelectElement;
-    let selectedCustomerId = parseInt(selectElement.value);
-    this.selectedCustomer = this.customers.find(
-      (c) => c.id == selectedCustomerId
-    );
-  }
-
-  customerTrackBy(index: number, customer: Customer): number {
-    return customer.id;
-  }
 }

@@ -4,11 +4,8 @@
   <div>
     <div class="select-wrapper">
       <label for="customer">Select a customer:</label>
-      <select id="customer" (change)="onCustomerSelected($event)">
-        <option
-          *ngFor="let customer of customers; trackBy: customerTrackBy"
-          [value]="customer.id"
-        >
+      <select id="customer" [(ngModel)]="selectedCustomer">
+        <option *ngFor="let customer of customers" [ngValue]="customer">
           {{ customer.fullName }}
         </option>
       </select>

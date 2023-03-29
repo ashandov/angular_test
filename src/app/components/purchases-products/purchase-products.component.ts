@@ -31,6 +31,7 @@ export class PurchaseProductsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.isLoading = true;
+
     this.productService
       .loadProucts()
       .pipe(takeUntil(this.unsubscribe$))
@@ -58,9 +59,5 @@ export class PurchaseProductsComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
-  }
-
-  productsTrackBy(index: number, product: Product): number {
-    return product.id;
   }
 }
