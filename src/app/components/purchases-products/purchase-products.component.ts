@@ -43,14 +43,15 @@ export class PurchaseProductsComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((data) => {
         this.purchases = data;
-        this.isLoading = false;
 
         let purchase = this.purchases!.filter(
-          (p) => p.productId == this.customer?.id
+          (pr) => pr.productId == this.customer?.id
         );
         this.purchasedProducts = purchase.map(
-          (p) => this.products!.find((pr) => pr.id == p.productId)!
+          (pu) => this.products!.find((pr) => pr.id == pu.productId)!
         );
+
+        this.isLoading = false;
       });
   }
 
